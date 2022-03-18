@@ -95,7 +95,7 @@ function getRandomNumber(min, max) {
 
 // 혼란스러운 코드 (명령형에 가깝다)
 function getSomeValue(params) {
-  let tempVal = '';
+  let tempVal = 1;
   
   for (let index = 0; index < array.length; index++) {
     temp = array[index];
@@ -104,10 +104,10 @@ function getSomeValue(params) {
     temp += array[index];
   }
 
-  if (temp ??) {
-    tempVal = ??
-  } else if (temp ??) {
-    temp += ??
+  if (temp === 1) {
+    tempVal = 2;
+  } else if (temp === 3) {
+    temp += 5
   }
   return temp
 }
