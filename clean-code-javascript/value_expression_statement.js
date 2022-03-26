@@ -10,12 +10,12 @@ ReactDOM.render(React.createElement('div', { id: 'msg' }, 'Hello World!'), mount
 
 // case 2
 // This JSX: (문을 값으로 넣는 경우 문법 에러)
-<div id={if (condition) { 'msg' }}>Hello World!</div>
+{/* <div id={if (condition) { 'msg' }}>Hello World!</div> */}
 
 // Is transformed to this JS:
-React.createElement("div", { id: if (condition) { 'msg' }}, "Hello World!");
+// React.createElement("div", { id: if (condition) { 'msg' }}, "Hello World!");
 
-const obj = {id: if (condition) { 'msg '}}
+// const obj = {id: if (condition) { 'msg '}}
 
 // case 3
 // 삼항연산자는 값으로 귀결된다. (값으로 식이 들어갈 수 있다.)
